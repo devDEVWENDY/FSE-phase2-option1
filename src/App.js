@@ -79,26 +79,14 @@ export function App(params) {
             </tr>
           </thead>
           <tbody>
-            {/* below: maps over customers to create each row for a single customer item name, email, password */}
-
-            {customers.map(
-              (item, index) => {
-                {/* className: checks customer id matches form id to set className to selected for this customer item */}
-
-                return (<tr key={item.id} 
-                  className={ (item.id === formObject.id )?'selected': ''}
-                  onClick={()=>handleListClick(item)} 
-                >
-                  <td>{item.name}</td>
-                  <td>{item.email}</td>
-                  <td>{item.password}</td>
-                </tr>);
-              }
-            )}
+            {/* CODE GOES below: maps over customers to create each row for a single customer item name, email, password */}
+            
+            <div> <CustomerList formObject={formObject} customers={customers} handleListClick={handleListClick} /></div>
+          
           </tbody>
         </table>
     </div>
-    <div> <CustomerList /></div>
+   
     <div className="boxed">
       <div>
         <h4>{mode}</h4>
