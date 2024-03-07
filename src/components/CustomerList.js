@@ -8,10 +8,6 @@ console.log(`PROPS ${props}`)
         <div className='customers'>
             <h1>THIS IS CUSTOMER LIST</h1>
 
-
-
-
-
             <div className="boxed" >
         <h4>Customer List</h4>
         <table id="customer-list">
@@ -25,13 +21,13 @@ console.log(`PROPS ${props}`)
           <tbody>
             {/* below: maps over customers to create each row for a single customer item name, email, password */}
 
-            {customers.map(
+            {props.customers.map(
               (item, index) => {
                 {/* className: checks customer id matches form id to set className to selected for this customer item */}
 
                 return (<tr key={item.id} 
-                  className={ (item.id === formObject.id )?'selected': ''}
-                  onClick={()=>handleListClick(item)} 
+                  className={ (item.id === props.formObject.id )?'selected': ''}
+                  onClick={()=>props.handleListClick(item)} 
                 >
                   <td>{item.name}</td>
                   <td>{item.email}</td>
