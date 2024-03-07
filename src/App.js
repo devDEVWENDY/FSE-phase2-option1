@@ -70,6 +70,7 @@ export function App(params) {
     <div>
 
     <div> <CustomerList customers={customers} formObject={formObject} handleListClick={handleListClick} /></div>
+     
     <div className="boxed">
       <div>
         <h4>{mode}</h4>
