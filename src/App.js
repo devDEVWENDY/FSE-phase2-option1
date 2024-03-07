@@ -68,25 +68,8 @@ export function App(params) {
 
   return (
     <div>
-      <div className="boxed" >
-        <h4>Customer List</h4>
-        <table id="customer-list">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Pass</th>
-            </tr>
-          </thead>
-          <tbody>
-            {/* CODE GOES below: maps over customers to create each row for a single customer item name, email, password */}
-            
-            <div> <CustomerList formObject={formObject} customers={customers} handleListClick={handleListClick} /></div>
-          
-          </tbody>
-        </table>
-    </div>
-   
+
+    <div> <CustomerList customers={customers} formObject={formObject} handleListClick={handleListClick} /></div>
     <div className="boxed">
       <div>
         <h4>{mode}</h4>
