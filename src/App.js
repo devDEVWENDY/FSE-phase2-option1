@@ -1,6 +1,7 @@
 // import React from 'react';
 // import customers from './memdb.js'
 import { getAll, post, put, deleteById } from './memdb.js';
+import CustomerList from './components/CustomerList.js';
 import './App.css';
 import React, {useState, useEffect} from 'react';
 
@@ -97,6 +98,7 @@ export function App(params) {
           </tbody>
         </table>
     </div>
+    <div> <CustomerList /></div>
     <div className="boxed">
       <div>
         <h4>{mode}</h4>
