@@ -2,8 +2,9 @@ import React from 'react';
 
 
 function CustomerList(props) {
-console.log(`PROPS ${props.customers[0]}`)
+console.log(`PROPS ${props.customers}`)
 
+// tranferred the whole customers
     return(
         <div className='customers'>
             <h1>THIS IS CUSTOMER LIST</h1>
@@ -40,7 +41,7 @@ console.log(`PROPS ${props.customers[0]}`)
             </div>
         </div>
     );
-    
+
 }
 
 export default CustomerList;
