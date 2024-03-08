@@ -7,7 +7,7 @@ console.log(`PROPS ${props.customers}`)
 // tranferred the whole customers
     return(
         <div className='customers'>
-            <h1>THIS IS CUSTOMER LIST</h1>
+            <h1>DIRECTORY</h1>
 
             <div className="boxed" >
                 <h4>Customer List</h4>

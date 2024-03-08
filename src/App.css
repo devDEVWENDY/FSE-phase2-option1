@@ -1,8 +1,13 @@
+h1 {
+    margin-left:80px;
+}
+
 h4 {
     margin: 0px;
     padding: 5px;
     padding-left: 0px;
     font-family: sans-serif;
+    color: white;
 }
 
 h5 {
@@ -25,7 +30,8 @@ input[type='text'], input[type='email']{
 table,
 td,
 tr {
-    border: 1.3px solid #aaa;
+    /* border: 1.3px solid #aaa; */
+    border: 1.3px solid rgb(0, 166, 255);
     border-collapse: collapse;
     padding: 3px;
 }
@@ -41,15 +47,19 @@ form{
 }
 
 div#root {
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
+    background-color: rgb(0, 166, 255);
     width: 350px;
 }
 
 .boxed {
-    border: 1.5px solid #aaa;
+    /* border: 1.5px solid #aaa; */
+    /* border: 1.5px solid rgb(0, 166, 255); */
+    border: 1.5px solid black;
     width: 315px;
     margin: 10px;
-    background-color: #bababa;
+    /* background-color: #bababa; */
+    background-color: #090909;
     display: inline-block;
     border-radius: 5px;
     padding-left: 5px;;
